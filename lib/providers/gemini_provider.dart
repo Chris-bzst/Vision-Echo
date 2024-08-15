@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:vision_echo/services/gemini_service.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
+import 'package:vision_echo/constants/prompts.dart';
 
 class GeminiProvider extends ChangeNotifier {
   static GenerativeModel _initModel() {
@@ -33,19 +34,7 @@ class GeminiProvider extends ChangeNotifier {
       bytes,
     );
 
-    const prompt = '''Analyze the provided image and generate a detailed description that includes the following:
-
-Object Identification: Identify and list the main objects or elements visible in the image (e.g., people, animals, vehicles, buildings).
-
-Spatial Relationships: Describe the relative positions of these objects (e.g., 'A person is standing to the right of a car').
-
-Distance Information: Provide estimated distances of key objects from the viewer if possible (e.g., 'The object is approximately 5 meters away').
-
-Contextual Information: Include any relevant contextual information that might help understand the environment (e.g., 'The setting is a park with a walking path and trees').
-
-Accessibility Considerations: Ensure the description is detailed enough to give a clear sense of the scene and help the user navigate or understand their surroundings.
-
-my request is ''';
+    const prompt = PromptConstants.shortPrompt;
 
     response = await _geminiService.generateContentFromImage(
       prompt: prompt,

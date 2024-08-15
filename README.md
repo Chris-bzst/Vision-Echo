@@ -1,16 +1,4 @@
-# vision_echo
-
-Vision Echo is committed to harnessing the power of AI to provide people with visual impairments the ability to perceive vision.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Introduction
+“Vision Echo” is dedicated to leveraging the visual analysis capabilities of artificial intelligence to help visually impaired individuals re-perceive the world. Through advanced image recognition technology and deep learning algorithms, “Vision Echo” will be able to capture and interpret the details of the surrounding environment in real-time, transforming this information into vivid audio descriptions, providing visually impaired individuals with a richer sensory experience. This technology not only helps them better understand the things and changes around them but also enhances their independence and quality of life, allowing them to be more connected and fulfilled with the world.
+##  App Photos
+<img src="/img/app.png" alt="App photo"  style="width: 900px;">
